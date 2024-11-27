@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+
+.mea-culpa-regular {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Formats the entire page*/
+.container {
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10rem
+}
+/*Formats the div container todo-app*/
+.todo-app {
+    border:black 1px solid;
+    width: 100%; /*takes up 100% of the container */
+    max-width: 500px; /*sets the max width of the 100% container to 500px making the width across the page shorter */
+    background: #fff; /*sets the background color of the container */
+    margin: 0 auto; /*centers the container */
+    padding: 2rem;
+    border-radius: 10px;
+}
+.todo-app h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #002765;
+    display: flex; /*makes the h2 a flexbox */
+    align-items: center; /*centers the items in the flexbox */
+    margin-bottom: 2rem;
+}
+.todo-app h2 img {
+    width: 50px;
+    margin-left: 1rem; /*sets the margin to the left of the image */
+}
+/*Formats the div container row*/
+.row {
+    /* border:black 5px solid; */
+    background: #edeef0; /*sets the background color of the row */
+    display: flex; /*makes the row a flexbox */
+    justify-content: space-between; /*sets the space between the items in the flexbox */
+    align-items: center; /*centers the items in the flexbox */
+    margin-bottom: 1rem;
+    padding-left: 1rem; /*sets the padding to the left of the row */
+    border-radius: 30px;
+}
+input {
+    flex: 1; /*sets the input to take up the entire space of the row */
+    border: none; /*removes the border */
+    outline: none; /*removes the outline */
+    background: transparent; /*sets the background to transparent */
+    font-size: 1.5rem;
+    font-weight: 14px;
+    padding: 1rem;
+}
+
+  
