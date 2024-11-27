@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /*Formats the entire page*/
 .container {
@@ -57,9 +58,61 @@ input {
     border: none; /*removes the border */
     outline: none; /*removes the outline */
     background: transparent; /*sets the background to transparent */
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 14px;
     padding: 1rem;
 }
+button {
+    border: none; /*removes the border */
+    outline: none; /*removes the outline */
+    background: #002765; 
+    color: #fff; 
+    padding: 16px 38px; 
+    font-size: 1rem; 
+    cursor: pointer;
+    border-radius: 40px; 
+}
 
-  
+ul li {
+    list-style: none; /*removes the bullet points */
+    padding: 12px 8px 12px 50px;
+    user-select: none; /*prevents the user from selecting the text */
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';/*adds content to the list */
+    position: absolute; /*sets the position to absolute */
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-image: url(images/uncheckedmark.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px; /*sets the top position */
+    left: 8px; /*sets the left position */
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #bcbcbc;
+}
+
+ul li.checked::before {
+    background-image: url(images/blkcheckmark.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #edeef0;
+    cursor: pointer;
+}
