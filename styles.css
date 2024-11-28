@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@600&family=Mea+Culpa&display=swap');
 
+.kalnia-glaze-600 {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .mea-culpa-regular {
-    font-family: "Mea Culpa", cursive;
+    font-family: "Mea Culpa", serif;
     font-weight: 400;
     font-style: normal;
   }
+  
 
   *{
     margin: 0;
@@ -22,7 +31,6 @@
 }
 /*Formats the div container todo-app*/
 .todo-app {
-    border:black 1px solid;
     width: 100%; /*takes up 100% of the container */
     max-width: 500px; /*sets the max width of the 100% container to 500px making the width across the page shorter */
     background: #fff; /*sets the background color of the container */
@@ -33,7 +41,7 @@
 .todo-app h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #002765;
+    color: #f22bf285;
     display: flex; /*makes the h2 a flexbox */
     align-items: center; /*centers the items in the flexbox */
     margin-bottom: 2rem;
@@ -74,6 +82,7 @@ button {
 }
 
 ul li {
+    font-family: "Kalnia Glaze", serif;
     list-style: none; /*removes the bullet points */
     padding: 12px 8px 12px 50px;
     user-select: none; /*prevents the user from selecting the text */

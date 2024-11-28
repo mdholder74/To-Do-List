@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moe's Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form id="mainForm" class="mainRow" novalidate>
+            <div class="column">
+              <label for="validationFirstName" class="formLabel">First name</label>
+              <input type="text" class="formControl" id="validationFirstName" value="Moe" required>
+              <div class="validFeedback">Completed</div>
+            </div>
+            <div class="column">
+              <label for="validationLastName" class="formLabel">Last name</label>
+              <input type="text" class="formControl" id="validationLastName" value="Holder" required>
+              <div class="validFeedback">Completed</div> <!-- this is the feedback that will be displayed when the user enters the correct input-->
+            </div> 
+            <div class="column">
+              <label for="validationUsername" class="formLabel">Username</label>
+              <div class="inputGroup hasvalidation">
+                <span class="inputGroupText" id="inputGroupPrepend">@</span>
+                <input type="text" class="formControl" id="validationUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalidFeedback">Please choose a username.</div>
+              </div>
+            </div>
+            <div>
+              <button class="btnsubmit" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <template id="errortemplate">
+        <div class="errorMessage"></div>
+    </template>
+  
+  <script src="index.js"></script> 
+</body>
+</html>
