@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@600&family=Mea+Culpa&family=Moo+Lah+Lah&display=swap');
+
+.moo-lah-lah-regular {
+    font-family: "Moo Lah Lah", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+    
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.regform {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Moo Lah Lah", sans-serif;
+    text-decoration: underline;
+    color: #9b59b6;
+}
+
+form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form .inputBox input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    color: #aaa3a3;
+    background-color: #edeef0;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.formLabel {
+    color: #9b59b6;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.btnsubmit {
+    display: inline-block;
+    background: #6df51369;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnsubmit:hover {
+    background: #6df513;
+    padding: 15px 25px;
+}
+
