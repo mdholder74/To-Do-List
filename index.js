@@ -60,6 +60,7 @@ firstNameInput.addEventListener('input', () => {
   } else {
     firstNameInput.setCustomValidity('');// Reset the custom error message
   }
+  firstNameInput.reportValidity(); // Trigger browser to show custom message
   
 });
 
@@ -71,6 +72,7 @@ lastNameInput.addEventListener ('input', ()=> {
   } else {
     lastNameInput.setCustomValidity('');
   }
+  lastNameInput.reportValidity(); // Trigger browser to show custom message
 
 });
 

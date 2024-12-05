@@ -18,18 +18,19 @@
     </header>
     <div class="container">
       <div class="regform">Registration Form</div>
+      <!-- The novalidate attribute disables automatic validation, so your custom validation logic has full control. -->
         <form id="mainForm" novalidate>
             <div class="inputBox">
               <label for="firstName" class="formLabel">First name</label>
-              <input type="text" class="formControl" id="firstName" value="Enter first name" required>
+              <input type="text" class="formControl" id="firstName" placeholder="Enter first name" required>
               </div>
             <div class="inputBox">
               <label for="lastName" class="formLabel">Last name</label>
-              <input type="text" class="formControl" id="lastName" value="Enter Last Name" required>
+              <input type="text" class="formControl" id="lastName" placeholder="Enter Last Name" required>
             </div> 
             <div class="inputBox">
               <label for="email" class="formLabel">Email</label>
-              <input type="email" class="formControl" id="email" value="Enter email" required>
+              <input type="email" class="formControl" id="email" placeholder="Enter email" required>
             <div>
               <button class="btnsubmit" type="submit">Submit Form</button>
             </div>
