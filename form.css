@@ -23,12 +23,19 @@ body {
 }
 
 nav ul {
+    padding: 1rem 5rem;
     list-style: none;
 
 }
 
 nav ul li {
     margin: 0 10px;
+}
+
+a {
+    color: white;
+    font-family: "Moo Lah Lah", sans-serif;
+    font-size: 1.6rem;
 }
     
 .container {
